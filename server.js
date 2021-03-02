@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 3001;
-const api = require('./routes/api');
+const api = require('./routes/api.js');
 const app = express();
 
 app.use(cors());
