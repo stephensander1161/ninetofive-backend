@@ -2,20 +2,20 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
-const User = require('./models/user');
-const Testimonial = require('./models/testimonial');
-const Skill = require('./models/skill');
-const SubSkill = require('./models/subskill');
-const Job = require('./models/job');
-const Promo = require('./models/promo');
-const Review = require('./models/review');
-const Subscriber = require('./models/subscriber');
-const Guarantee = require('./models/guarantee');
+const User = require('../models/user.js');
+const Testimonial = require('../models/testimonial.js');
+const Skill = require('../models/skill.js');
+const SubSkill = require('../models/subskill.js');
+const Job = require('../models/job.js');
+const Promo = require('../models/promo.js');
+const Review = require('../models/review.js');
+const Subscriber = require('../models/subscriber.js');
+const Guarantee = require('../models/guarantee.js');
 const dotenv = require('dotenv');
 
 const mongoose = require('mongoose');
 const { transcode } = require('buffer');
-const howItWork = require('./models/howItWork');
+const howItWork = require('../models/howItWork.js');
 const db = 'mongodb+srv://userstephen:9ineTo5ive!@cluster0.qt2k1.mongodb.net/eventsdb?retryWrites=true&w=majority';
 
 dotenv.config();
